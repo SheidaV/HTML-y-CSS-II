@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -24,6 +25,31 @@ body {
   background-color: #fff;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+    @media (min-width: $mqMinWidth) {
+      max-width: none;
+    }
+}
+
+.logo-container{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+
+}
+
+
+header {
+  background: left / cover url("https://www.infobae.com/new-resizer/FK93GQ8pLy2R1C3Lv7hhsn6pInc=/arc-anglerfish-arc2-prod-infobae/public/RBLZYYD2DVAWTFKFNDNKG4A4PU.jpeg"); 
+  background-blend-mode: darken;
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  text-shadow: #000 2px 2px 0.2rem;
 }
 
 .uoc-logo {
@@ -54,4 +80,9 @@ body {
   margin-top: 1.5rem;
   font-size: 0.75rem;
   text-align: center;
+
+  a {
+      color: inherit;
+      text-decoration: none;
+  }
 }
